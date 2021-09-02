@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Event Listener</title>
     <style>
         div#area {
             background: green;
@@ -17,12 +17,15 @@
     </style>
 </head>
 <body>
-    <!--Colocar o DOM event dentro da tag html pode não ser a melhor opção para um código limpo, mas funciona.-->
-   <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
+    
+   <div id="area">
        Interaja...
    </div> 
    <script>
        var area = window.document.getElementById('area')
+       area.addEventListener('click', clicar)
+       area.addEventListener('mouseenter', entrar)
+       area.addEventListner('mouseout', sair)
 
        function clicar() {
             area.innerText = 'Clicou!'
