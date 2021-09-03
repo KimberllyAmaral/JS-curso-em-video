@@ -11,7 +11,26 @@
     <h1>Somando Valores</h1>
     <input type="number" name="txtn1" id="txtn1">
     <input type="number" name="txtn2" id="txtn2">
-    <input type="button" value="somar" onclick='soma()'>
+    <input type="button" value="somar" onclick='somar()'>
+    <div id ="res">Resultado</div>
+    <script>
+        function somar() {
+            // é possível capturar a informação com o input com o get.ElementById
+            var tn1 = window.document.getElementById('txtn1');
+            // Também é possível capturar a informação do imput com o querySelector
+            var tn2 = window.document.querySelector('input#txtn2');
+            // Variável para capturar o resultado dentro da div
+            var res = window.document.getElementById('res');
+            // como as informações estão vindo de uma caixa de texto, é necessário converter os dados em números
+            // para isso, mais duas variáveis precisam ser criadas
+            var n1 = Number(tn1.value);
+            var n2 = Number(tn2.value);
+            // variavel de soma 
+            var s = n1 + n2
+            // mostrar o resultado de forma organizada dentro da div
+            res.innerHTML = `A soma entre ${n1} e ${n2} é igual a ${s}`
+        }
+    </script>
     
 </body>
 </html>
