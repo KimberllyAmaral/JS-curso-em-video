@@ -5,6 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Somando Números</title>
+    <style>
+        body {
+            font: normal 18pt Arial;
+        }
+        input {
+            font: normal 18pt Arial;
+            width: 100px;
+        }
+    </style>
 </head>
 <body>
     <!--Nessa parte permitiremos que o usuário interaja digitando informações-->
@@ -28,7 +37,7 @@
             // variavel de soma 
             var s = n1 + n2
             // mostrar o resultado de forma organizada dentro da div
-            res.innerHTML = `A soma entre ${n1} e ${n2} é igual a ${s}`
+            res.innerHTML = `A soma entre ${n1} e ${n2} é igual a <strong>${s}</strong>`
         }
     </script>
     
