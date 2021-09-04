@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div#area {
+            background: green;
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!--Colocar o DOM event dentro da tag html pode não ser a melhor opção para um código limpo, mas funciona.-->
+   <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
+       Interaja...
+   </div> 
+   <script>
+       var area = window.document.getElementById('area')
+
+       function clicar() {
+            area.innerText = 'Clicou!'
+       }
+       function entrar() {
+            area.innerText = 'Entrou!'
+       }
+       function sair() {
+           area.innerText = 'Saiu!'
+       }
+            
+
+   </script>
+</body>
+</html>
