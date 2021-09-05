@@ -9,7 +9,7 @@
 <body>
     <h1>Nome dado para quem nasce nos estados do Brasil</h1>
     <legend>Selecione o estado em que a pessoa nasceu</legend>
-    <select id="estados"onchange="estados(this.value)">
+    <select id="estados" onchange="estados(this.value)">
         <option>Selecione um Estado</option>
         <option value="acre">Acre</option>
         <option value="alagoas">Alagoas</option>
@@ -17,7 +17,7 @@
         <option value="amazonas">Amazonas</option>
         <option value="bahia">Bahia</option>
         <option value="ceara">Ceará</option>
-        <option value="destritoFederal">Destrito Federal</option>
+        <option value="distritoFederal">Distrito Federal</option>
         <option value="espiritoSanto">Espírito Santo</option>
         <option value="goias">Goiás</option>
         <option value="maranhao">Maranhão</option>
@@ -44,16 +44,91 @@
         function estados(valor) {
             
             var opcao = window.document.getElementById('estados').value;
-            // var resultado = window.document.getElementById('resultado')
+            var resultado = window.document.getElementById('resultado')
 
-            // switch (opcao) {
-            //     case 'acre':
-            //         window.alert('Quem nasce no Acre é Acriano.')
-            //         break;
             switch (opcao) {
                 case 'acre':
-                    alert('Quem nasce no Acre é Acriano.');
+                    resultado.innerHTML = "Quem nasce no Acre é acriano.";
                     break;
+                case 'alagoas':
+                    resultado.innerHTML = "Quem nasce em Alagoas é alagoano.";
+                    break;
+                case 'amapa':
+                    resultado.innerHTML = "Quem nasce em Amapa é amapaense";
+                    break;
+                case 'amazonas':
+                    resultado.innerHTML = "Quem nasce no Amazonas é amazonense.";
+                    break;
+                case 'bahia':
+                    resultado.innerHTML = "Quem nasce na Bahia é baiano.";
+                    break;
+                case 'ceara':
+                    resultado.innerHTML = "Quem nasce no Ceara é cearense";
+                    break;
+                case 'distritoFederal':
+                    resultado.innerHTML = "Quem nasce no Distrito Federal é brasiliense."
+                    break;
+                case 'espiritoSanto':
+                    resultado.innerHTML = "Quem nasce em Espírito Santo é Capixaba ou espírito-santense."
+                    break;
+                case 'goias':
+                    resultado.innerHTML = "Quem nasce em Goiás é goiano."
+                    break;
+                case 'maranhao':
+                    resultado.innerHTML = "Quem nasce no Maranhão é maranhense.";
+                    break;
+                case 'mataGrosso':
+                    resultado.innerHTML = "Quem nasce no Mato Grosso é mato-grossense.";
+                    break;
+                case 'matoGrossoDoSul':
+                    resultado.innerHTML = "Quem nasce no Mato Grosso do Sul é sul-mato-grossense."
+                    break;
+                case 'minasGerais':
+                    resultado.innerHTML = "Quem nasce em Minas Gerais é mineiro.";
+                    break;
+                case 'para':
+                    resultado.innerHTML = "Quem nasce no Para é paranaense.";
+                    break;
+                case 'paraiba':
+                    resultado.innerHTML = "Quem nasce na Paraíba é paraibano.";
+                    break;
+                case 'parana':
+                    resultado.innerHTML = "Quem nasce no Paraná é paranaense.";
+                    break;
+                case 'pernanbuco':
+                    resultado.innerHTML = "Quem nasce em Pernambuco é pernambucano";
+                    break;
+                case 'piaui': 
+                    resultado.innerHTML = "Quem nasce no Piauí é piauense.";
+                    break;
+                case 'rioDeJaneiro': 
+                    resultado.innerHTML = "Quem nasce no Rio de janeiro é fluminense ou carioca.";
+                    break;
+                case 'rioGrandeDoNorte': 
+                    resultado.innerHTML = "Quem nasce no Rio Grande do Norte é potiguar ou norte-rio-grandense.";
+                    break;
+                case 'rioGrandeDoSul':
+                    resultado.innerHTML = "Quem nasce no Rio Grande do Sul é gaúcho ou sul-rio-grandense.";
+                    break;
+                case 'rondonia':
+                    resultado.innerHTML = "Quem nasce em Rondônia  é rondoniano ou rondoniense.";
+                    break;
+                case 'roraima':
+                    resultado.innerHTML = "Quem nasce em Roraima é roraimense.";
+                    break;
+                case 'santaCatarina':
+                    resultado.innerHTML = "Quem nasce em Santa Catarina é catarinense ou barriga-verde.";
+                    break;
+                case 'saoPaulo':
+                    resultado.innerHTML = "Quem nasce em São Paulo é paulista."
+                    break;
+                case 'sergipe':
+                    resultado.innerHTML = "Quem nasce Sergipe é sergipano.";
+                    break;
+                case 'tocantins': 
+                    resultado.innerHTML = "Quem nasce em Tocantis é tocantinense.";
+                    break;
+
             }
             
             
