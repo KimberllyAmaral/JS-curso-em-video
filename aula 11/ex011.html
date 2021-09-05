@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento OnChange</title>
+</head>
+<body>
+    <h1>Nome dado para quem nasce nos estados do Brasil</h1>
+    <legend>Selecione o estado em que a pessoa nasceu</legend>
+    <select id="estados"onchange="estados(this.value)">
+        <option>Selecione um Estado</option>
+        <option value="acre">Acre</option>
+        <option value="alagoas">Alagoas</option>
+        <option value="amapa">Amapá</option>
+        <option value="amazonas">Amazonas</option>
+        <option value="bahia">Bahia</option>
+        <option value="ceara">Ceará</option>
+        <option value="destritoFederal">Destrito Federal</option>
+        <option value="espiritoSanto">Espírito Santo</option>
+        <option value="goias">Goiás</option>
+        <option value="maranhao">Maranhão</option>
+        <option value="mataGrosso">Mato Grosso</option>
+        <option value="matoGrossoDoSul">Mato Grosso do Sul</option>
+        <option value="minasGerais">Minas Gerais</option>
+        <option value="para">Pará</option>
+        <option value="paraiba">Paraíba</option>
+        <option value="parana">Paraná</option>
+        <option value="pernanbuco">Pernanbuco</option>
+        <option value="piaui">Piauí</option>
+        <option value="rioDeJaneiro">Rio de Janeiro</option>
+        <option value="rioGrandeDoNorte">Rio Grande do Norte</option>
+        <option value="rioGrandeDoSul">Rio Grande do Sul</option>
+        <option value="rondonia">Rondônia</option>
+        <option value="roraima">Roraima</option>
+        <option value="santaCatarina">Santa Catarina</option>
+        <option value="saoPaulo">São Paulo</option>
+        <option value="sergipe">Sergipe</option>
+        <option value="tocantins">Tocantins</option>
+    </select>
+    <div id="resultado"></div>
+    <script>
+        function estados(valor) {
+            
+            var opcao = window.document.getElementById('estados').value;
+            // var resultado = window.document.getElementById('resultado')
+
+            // switch (opcao) {
+            //     case 'acre':
+            //         window.alert('Quem nasce no Acre é Acriano.')
+            //         break;
+            switch (opcao) {
+                case 'acre':
+                    alert('Quem nasce no Acre é Acriano.');
+                    break;
+            }
+            
+            
+        }
+    </script>
+</body>
+</html>
